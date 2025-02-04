@@ -1,0 +1,26 @@
+---
+const imgUrl = "https://placecats.com/500/500"; // currently just as placeholder
+const name = "Alejandro Flores"
+const profession = "Desarrollador de software"
+---
+
+<main class="border-b border-zinc-700 flex flex-wrap justify-center lg:justify-between lg:flex-nowrap items-center gap-4 text-wrap overflow-hidden pb-4">
+    <div class="max-w-[450px]">
+      <h1 class="text-3xl md:text-4xl">{name}</h1>
+
+      <h2>{profession}</h2>
+      <p>
+        Actualmente estudio una licenciatura en <span class="font-bold"
+          >Ingenieria en Sistemas Computacionales</span
+        >.
+      </p>
+      <p>
+        Me apasiona la programación y las computadoras, mi fuerte es la atención
+        a los detalles.
+      </p>
+    </div>
+    <img 
+      class="aspect-square h-full max-h-[275px] rounded-3xl" 
+      src={imgUrl} 
+      alt="Una foto mia" />
+</main>

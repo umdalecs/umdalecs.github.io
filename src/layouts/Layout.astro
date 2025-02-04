@@ -1,17 +1,22 @@
+---
+const { title } = Astro.props;
+---
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="text-zinc-300 bg-zinc-900 w-3/4 sm:w-7/8 md:w-1/2 m-auto mt-0" >
+    <slot />
+  </body>
 </html>
-
 <style>
-	@import "tailwindcss"
+  @import "tailwindcss";
+
+  @theme {
+  }
 </style>
