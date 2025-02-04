@@ -1,2 +1,2 @@
-# umdalecs Portolio repo
+# umdalecs Portfolio repo
 
