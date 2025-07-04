@@ -1,10 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import "tailwindcss";
 
+:root {
+  --font-display: "Roboto";
+
+  --background: #eeeeee;
+  --text-primary: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111111;
+    --text-primary: #ffffff;
+  }
+}
+
 @theme {
-    --font-roboto: "Roboto", sans-serif; 
+  --color-primary: var(--text-primary);
+  --color-background: var(--background);
 }
 
 body {
-    @apply font-roboto;
+  @apply bg-background text-primary;
 }
+
+/* body * {
+  @apply border-1 border-red-600;
+} */

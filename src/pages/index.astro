@@ -1,8 +1,100 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import '../styles/global.css'
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
 ---
 
 <Layout title="Alejandro Flores">
-	<h1 class="text-3xl">Hello from astro</h1>
+  <header class="flex justify-between p-4">
+    <h2>Alejandro Flores</h2>
+    <nav class="flex gap-4">
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main
+    class="w-full flex flex-col justify-center lg:max-w-[900px] mx-auto"
+  >
+    <section id="hero" class="flex justify-center p-4">
+      <div>
+        <h1 class="text-2xl font-bold flex-1">Alejandro Flores</h1>
+        <p class="mt-6">
+          Motivated Computer Systems Engineering student and backend developer
+          with hands-on experience in building scalable web applications using
+          .NET Core and RESTful APIs. Skilled in C#, Java, and PostgreSQL, with
+          a strong understanding of clean code principles and design patterns
+          such as Repository and Unit of Work. Passionate about backend
+          development, eager to grow in Spring Boot or .NET environments. Known
+          for being a fast learner, team player, and dedicated to delivering
+          maintainable code.
+        </p>
+      </div>
+      <img
+        class="p-2 aspect-square max-h-[300px]"
+        src="https://placehold.co/600x600"
+        alt="placeholder img"
+      />
+    </section>
+    <hr class="my-4" />
+    <section id="projects">
+      <h2 class="text-xl text-center font-bold">Projects</h2>
+
+      <div>
+        <div class="flex my-4 p-4">
+          <img
+            class="aspect-square max-h-[200px]"
+            src="https://placehold.co/400x400"
+            alt="project placeholder"
+          />
+          <div class="p-6">
+            <h3 class="font-bold">Project Name</h3>
+            <p>
+              Description: Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Perspiciatis praesentium iusto magni magnam esse possimus
+              debitis ipsa veritatis rerum modi non repellendus consequatur et
+              exercitationem, atque ab quasi, vitae saepe!
+            </p>
+            <span>
+              <strong>Technologies: </strong>
+              C#, ASP.NET core, PostgreSQL
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="my-4" />
+    <section id="contact">
+      <h2 class="text-xl text-center font-bold">Contact</h2>
+      <ul class="p-4 text-center">
+        <li>
+          <strong>Email:</strong>
+          <a href="mailto:marale7951@gmail.com">marale7951@gmail.com</a>
+        </li>
+        <li>
+          <strong>Phone:</strong>
+          <a href="tel:+526671507485">+52 667 150 7485</a>
+        </li>
+        <li><strong>Location:</strong> Culiacán, Sinaloa, México</li>
+        <li>
+          <strong>GitHub:</strong>
+          <a href="https://github.com/umdalecs" target="_blank" rel="noopener"
+            >github.com/umdalecs</a
+          >
+        </li>
+        <li>
+          <strong>LinkedIn:</strong>
+          <a
+            href="https://linkedin.com/in/alejandro-flores-developer"
+            target="_blank"
+            rel="noopener noreferrer"
+            >linkedin.com/in/alejandro-flores-developer</a
+          >
+        </li>
+      </ul>
+    </section>
+    <hr class="my-4"/>
+
+    <footer class="flex p-8 justify-center">
+      <p>© 2025 Martin Alejandro Flores Saldaña</p>
+    </footer>
+  </main>
 </Layout>
