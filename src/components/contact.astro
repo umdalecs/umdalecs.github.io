@@ -14,7 +14,7 @@ import { Icon } from "astro-icon/components";
     Have an interesting project, collaboration idea, or just want to say hello? I'd love to connect with you. Reach out via email and I'll get back to you as soon as possible.
   </p>
 
-  <div class="w-full max-w-xl bg-background-secondary/60 border border-accent-blue/15 rounded-2xl backdrop-blur-lg p-8 flex flex-col items-center transition-all duration-300 hover:border-accent-blue hover:box-glow-blue hover:-translate-y-1">
+  <div class="w-full max-w-xl bg-background-secondary/60 border border-accent-blue/15 rounded-2xl backdrop-blur-lg p-6 sm:p-8 flex flex-col items-center transition-all duration-300 hover:border-accent-blue hover:box-glow-blue hover:-translate-y-1">
     <div class="p-4 bg-accent-blue/10 border border-accent-blue/30 rounded-full mb-6 box-glow-blue transition-all duration-300 hover:scale-105">
       <Icon name="lucide:mail" class="text-accent-blue text-4xl drop-shadow-icon-contrast shrink-0 animate-pulse" />
     </div>
@@ -30,12 +30,12 @@ import { Icon } from "astro-icon/components";
     <!-- Email Card with interactive effects -->
     <a
       href="mailto:dev.alejandro.flores@gmail.com"
-      class="group/email flex items-center gap-3 py-3 px-6 rounded-xl bg-background-accent/80 border border-accent-purple/20 hover:border-accent-purple hover:bg-accent-purple/10 transition-all duration-300 mb-6 font-mono text-lg md:text-xl text-accent-purple hover:text-white"
+      class="group/email flex items-center gap-2 sm:gap-3 py-2.5 px-4 sm:px-6 rounded-xl bg-background-accent/80 border border-accent-purple/20 hover:border-accent-purple hover:bg-accent-purple/10 transition-all duration-300 mb-6 font-mono text-xs min-[390px]:text-sm sm:text-base md:text-lg text-accent-purple hover:text-white max-w-full"
     >
-      <span class="text-foreground/90 group-hover/email:text-white transition-colors duration-300">
+      <span class="text-foreground/90 group-hover/email:text-white transition-colors duration-300 break-all">
         dev.alejandro.flores@gmail.com
       </span>
-      <Icon name="lucide:external-link" class="text-base text-accent-purple/70 group-hover/email:text-white transition-colors duration-300" />
+      <Icon name="lucide:external-link" class="text-base text-accent-purple/70 group-hover/email:text-white transition-colors duration-300 shrink-0" />
     </a>
 
     <!-- Interactive Copy Button -->
