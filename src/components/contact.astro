@@ -11,77 +11,147 @@ import { Icon } from "astro-icon/components";
   </h2>
 
   <p class="text-center text-foreground/80 mb-8 max-w-2xl leading-relaxed">
-    Have an interesting project, collaboration idea, or just want to say hello? I'd love to connect with you. Reach out via email and I'll get back to you as soon as possible.
+    Have an interesting project, collaboration idea, or just want to say hello? I'd love to connect with you. Reach out via email or Signal and I'll get back to you as soon as possible.
   </p>
 
-  <div class="w-full max-w-xl bg-background-secondary/60 border border-accent-blue/15 rounded-2xl backdrop-blur-lg p-6 sm:p-8 flex flex-col items-center transition-all duration-300 hover:border-accent-blue hover:box-glow-blue hover:-translate-y-1">
-    <div class="p-4 bg-accent-blue/10 border border-accent-blue/30 rounded-full mb-6 box-glow-blue transition-all duration-300 hover:scale-105">
-      <Icon name="lucide:mail" class="text-accent-blue text-4xl drop-shadow-icon-contrast shrink-0 animate-pulse" />
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl">
+    <!-- Email Card -->
+    <div class="w-full bg-background-secondary/60 border border-accent-blue/15 rounded-2xl backdrop-blur-lg p-6 sm:p-8 flex flex-col items-center justify-between transition-all duration-300 hover:border-accent-blue hover:box-glow-blue hover:-translate-y-1">
+      <div class="flex flex-col items-center w-full">
+        <div class="p-4 bg-accent-blue/10 border border-accent-blue/30 rounded-full mb-6 box-glow-blue transition-all duration-300 hover:scale-105">
+          <Icon name="lucide:mail" class="text-accent-blue text-4xl drop-shadow-icon-contrast shrink-0 animate-pulse" />
+        </div>
+
+        <h3 class="text-2xl font-mono text-white mb-2 tracking-wide">
+          Email
+        </h3>
+
+        <p class="text-foreground-ghost text-sm mb-6">
+          Primary Contact Email
+        </p>
+
+        <!-- Email Card Link -->
+        <a
+          href="mailto:dev.alejandro.flores@gmail.com"
+          class="group/email flex items-center justify-center gap-2 sm:gap-3 py-2.5 px-4 sm:px-6 rounded-xl bg-background-accent/80 border border-accent-purple/20 hover:border-accent-purple hover:bg-accent-purple/10 transition-all duration-300 mb-6 font-mono text-xs min-[390px]:text-sm sm:text-base text-accent-purple hover:text-white max-w-full w-full text-center"
+        >
+          <span class="text-foreground/90 group-hover/email:text-white transition-colors duration-300 truncate">
+            dev.alejandro.flores@gmail.com
+          </span>
+          <Icon name="lucide:external-link" class="text-base text-accent-purple/70 group-hover/email:text-white transition-colors duration-300 shrink-0" />
+        </a>
+      </div>
+
+      <!-- Interactive Copy Button -->
+      <button
+        id="copy-email-btn"
+        class="flex items-center justify-center gap-2 text-background font-semibold bg-accent-pink border border-accent-pink py-2.5 px-6 rounded-lg transition-all duration-300 hover:bg-transparent hover:text-accent-pink hover:box-glow-pink hover:-translate-y-0.5 cursor-pointer w-full sm:w-auto"
+        data-email="dev.alejandro.flores@gmail.com"
+      >
+        <Icon name="lucide:copy" class="text-lg transition-all duration-300" id="copy-icon" />
+        <Icon name="lucide:check" class="text-lg transition-all duration-300 hidden" id="check-icon" />
+        <span id="copy-text" class="transition-all duration-300">Copy Email</span>
+      </button>
     </div>
-    
-    <h3 class="text-2xl font-mono text-white mb-2 tracking-wide">
-      Get in Touch
-    </h3>
-    
-    <p class="text-foreground-ghost text-sm mb-6">
-      Primary Contact Email
-    </p>
 
-    <!-- Email Card with interactive effects -->
-    <a
-      href="mailto:dev.alejandro.flores@gmail.com"
-      class="group/email flex items-center gap-2 sm:gap-3 py-2.5 px-4 sm:px-6 rounded-xl bg-background-accent/80 border border-accent-purple/20 hover:border-accent-purple hover:bg-accent-purple/10 transition-all duration-300 mb-6 font-mono text-xs min-[390px]:text-sm sm:text-base md:text-lg text-accent-purple hover:text-white max-w-full"
-    >
-      <span class="text-foreground/90 group-hover/email:text-white transition-colors duration-300 break-all">
-        dev.alejandro.flores@gmail.com
-      </span>
-      <Icon name="lucide:external-link" class="text-base text-accent-purple/70 group-hover/email:text-white transition-colors duration-300 shrink-0" />
-    </a>
+    <!-- Signal Card -->
+    <div class="w-full bg-background-secondary/60 border border-accent-blue/15 rounded-2xl backdrop-blur-lg p-6 sm:p-8 flex flex-col items-center justify-between transition-all duration-300 hover:border-accent-blue hover:box-glow-blue hover:-translate-y-1">
+      <div class="flex flex-col items-center w-full">
+        <div class="p-4 bg-accent-blue/10 border border-accent-blue/30 rounded-full mb-6 box-glow-blue transition-all duration-300 hover:scale-105 flex items-center justify-center">
+          <Icon name="logos:signal" size="2.25rem" class="drop-shadow-icon-contrast shrink-0" />
+        </div>
 
-    <!-- Interactive Copy Button -->
-    <button
-      id="copy-email-btn"
-      class="flex items-center gap-2 text-background font-semibold bg-accent-pink border border-accent-pink py-2.5 px-6 rounded-lg transition-all duration-300 hover:bg-transparent hover:text-accent-pink hover:box-glow-pink hover:-translate-y-0.5 cursor-pointer"
-      data-email="dev.alejandro.flores@gmail.com"
-    >
-      <Icon name="lucide:copy" class="text-lg transition-all duration-300" id="copy-icon" />
-      <Icon name="lucide:check" class="text-lg transition-all duration-300 hidden" id="check-icon" />
-      <span id="copy-text" class="transition-all duration-300">Copy Email</span>
-    </button>
+        <h3 class="text-2xl font-mono text-white mb-2 tracking-wide">
+          Signal
+        </h3>
+
+        <p class="text-foreground-ghost text-sm mb-6">
+          Encrypted Messaging
+        </p>
+
+        <!-- Signal Link (placeholder href ready for user link) -->
+        <a
+          href="https://signal.me/#eu/zbQs9mAo6VdzGtcvCuS8h9AVO9KnIdXuJ8ZokqPFgSPy23YmA3xHvp7-o-EScRYq"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group/signal flex items-center justify-center gap-2 sm:gap-3 py-2.5 px-4 sm:px-6 rounded-xl bg-background-accent/80 border border-accent-purple/20 hover:border-accent-purple hover:bg-accent-purple/10 transition-all duration-300 mb-6 font-mono text-xs min-[390px]:text-sm sm:text-base text-accent-purple hover:text-white max-w-full w-full text-center"
+        >
+          <span class="text-foreground/90 group-hover/signal:text-white transition-colors duration-300 truncate">
+            alejandrofs.07
+          </span>
+          <Icon name="lucide:external-link" class="text-base text-accent-purple/70 group-hover/signal:text-white transition-colors duration-300 shrink-0" />
+        </a>
+      </div>
+
+      <!-- Interactive Copy Button -->
+      <button
+        id="copy-signal-btn"
+        class="flex items-center justify-center gap-2 text-background font-semibold bg-accent-pink border border-accent-pink py-2.5 px-6 rounded-lg transition-all duration-300 hover:bg-transparent hover:text-accent-pink hover:box-glow-pink hover:-translate-y-0.5 cursor-pointer w-full sm:w-auto"
+        data-username="alejandrofs.07"
+      >
+        <Icon name="lucide:copy" class="text-lg transition-all duration-300" id="copy-signal-icon" />
+        <Icon name="lucide:check" class="text-lg transition-all duration-300 hidden" id="check-signal-icon" />
+        <span id="copy-signal-text" class="transition-all duration-300">Copy Username</span>
+      </button>
+    </div>
   </div>
 </section>
 
 <script>
-  const copyBtn = document.getElementById("copy-email-btn");
-  const copyText = document.getElementById("copy-text");
-  const copyIcon = document.getElementById("copy-icon");
-  const checkIcon = document.getElementById("check-icon");
+  function setupCopyButton(
+    btnId: string,
+    textId: string,
+    copyIconId: string,
+    checkIconId: string,
+    attrName: string,
+    defaultLabel: string
+  ) {
+    const copyBtn = document.getElementById(btnId);
+    const copyText = document.getElementById(textId);
+    const copyIcon = document.getElementById(copyIconId);
+    const checkIcon = document.getElementById(checkIconId);
 
-  if (copyBtn && copyText && copyIcon && checkIcon) {
-    const email = copyBtn.getAttribute("data-email") || "";
-    copyBtn.addEventListener("click", () => {
-      navigator.clipboard.writeText(email).then(() => {
-        // Change text and show check icon
-        copyText.textContent = "Copied!";
-        copyIcon.classList.add("hidden");
-        checkIcon.classList.remove("hidden");
-        
-        // Change button styling to success
-        copyBtn.classList.remove("bg-accent-pink", "border-accent-pink", "text-background", "hover:text-accent-pink", "hover:box-glow-pink");
-        copyBtn.classList.add("bg-green-600", "border-green-600", "text-white");
-        
-        // Reset after 2 seconds
-        setTimeout(() => {
-          if (copyText) copyText.textContent = "Copy Email";
-          copyIcon.classList.remove("hidden");
-          checkIcon.classList.add("hidden");
-          
-          copyBtn.classList.add("bg-accent-pink", "border-accent-pink", "text-background", "hover:text-accent-pink", "hover:box-glow-pink");
-          copyBtn.classList.remove("bg-green-600", "border-green-600", "text-white");
-        }, 2000);
-      }).catch(err => {
-        console.error("Failed to copy text: ", err);
+    if (copyBtn && copyText && copyIcon && checkIcon) {
+      const value = copyBtn.getAttribute(attrName) || "";
+      copyBtn.addEventListener("click", () => {
+        navigator.clipboard
+          .writeText(value)
+          .then(() => {
+            copyText.textContent = "Copied!";
+            copyIcon.classList.add("hidden");
+            checkIcon.classList.remove("hidden");
+
+            copyBtn.classList.remove(
+              "bg-accent-pink",
+              "border-accent-pink",
+              "text-background",
+              "hover:text-accent-pink",
+              "hover:box-glow-pink"
+            );
+            copyBtn.classList.add("bg-green-600", "border-green-600", "text-white");
+
+            setTimeout(() => {
+              if (copyText) copyText.textContent = defaultLabel;
+              copyIcon.classList.remove("hidden");
+              checkIcon.classList.add("hidden");
+
+              copyBtn.classList.add(
+                "bg-accent-pink",
+                "border-accent-pink",
+                "text-background",
+                "hover:text-accent-pink",
+                "hover:box-glow-pink"
+              );
+              copyBtn.classList.remove("bg-green-600", "border-green-600", "text-white");
+            }, 2000);
+          })
+          .catch((err) => {
+            console.error("Failed to copy text: ", err);
+          });
       });
-    });
+    }
   }
+
+  setupCopyButton("copy-email-btn", "copy-text", "copy-icon", "check-icon", "data-email", "Copy Email");
+  setupCopyButton("copy-signal-btn", "copy-signal-text", "copy-signal-icon", "check-signal-icon", "data-username", "Copy Username");
 </script>
